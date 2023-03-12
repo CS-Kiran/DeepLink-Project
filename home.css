@@ -1,0 +1,281 @@
+body {
+    background: #120e16;
+    color: #f6f6f7;
+}
+
+.container {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 15px;
+}
+
+.logo img {
+    position: absolute;
+    max-height: 65px;
+    max-width: auto;
+    transform-origin: top-left;
+    transform: rotate(45deg);
+}
+
+.logo h3 {
+    font-weight: 150;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 5px;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.navigation {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 800px;
+    
+}
+
+.navigation nav a {
+    
+    margin-left: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #f6f6f7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.navigation nav a::after {
+    content: '';
+    width: auto;
+    max-height: 1px;
+    transition: border-bottom 0.5s ease-in;
+}
+
+.navigation nav a:hover {
+    border-bottom: 2px solid #613fe6;
+}
+
+.navigation button {
+    margin-left: 35px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #422aa3;
+    border: 0px;
+    cursor: pointer;
+}
+
+.navigation button a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    margin-right: 16px;
+    color: #f6f6f7;
+}
+
+#login:hover {
+    border: 0px solid;
+}
+
+.img1 img {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 800px;
+    border-radius: 20px;
+    height: auto;
+    max-width: 50%;
+    opacity: 0.9;
+}
+
+.moto {
+    position: absolute;
+    margin-top: 200px;
+    max-height: 50px;
+    max-width: 700px;
+    margin-left: 120px;
+}
+
+.moto  h1{
+    font-family: monospace;
+    font-size: 45px;
+}
+
+.intro {
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 30px;
+    max-width: 500px;
+    max-height: max-content;
+}
+
+.intro h3{
+    font-weight: 400;
+    color: #613fe5;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.intro p{
+    padding: 3px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 1024px) and (max-width : 1920px)  {
+    .container {
+        font-family: 'Open Sans', sans-serif;
+        position: relative;
+    }
+    
+    .logo {
+        position: absolute;
+        margin-left: 15px;
+    }
+    
+    .logo img {
+        position: absolute;
+        max-height: 65px;
+        max-width: auto;
+        transform-origin: top-left;
+        transform: rotate(45deg);
+    }
+    
+    .logo h3 {
+        font-weight: 150;
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 5px;
+        font-family: monospace;
+        font-size: 25px;
+    }
+    
+    .navigation {
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 700px;
+        
+    }
+    
+    .navigation nav a {
+        margin-left: 25px;
+        text-align: center;
+        text-decoration: none;
+        color: #f6f6f7;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+    }
+    
+    .navigation nav a::after {
+        content: '';
+        width: auto;
+        max-height: 1px;
+        transition: border-bottom 0.5s ease-in;
+    }
+    
+    .navigation nav a:hover {
+        border-bottom: 2px solid #613fe6;
+    }
+    
+    .navigation button {
+        margin-left: 35px;
+        padding: 10px;
+        border-radius: 8px;
+        background: #422aa3;
+        border: 0px;
+        cursor: pointer;
+    }
+    
+    .navigation button a{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 17px;
+        margin-right: 16px;
+        color: #f6f6f7;
+    }
+    
+    #login:hover {
+        border: 0px solid;
+    }
+    
+    .img1 img {
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 800px;
+        border-radius: 20px;
+        height: auto;
+        max-width: 50%;
+        opacity: 0.9;
+    }
+    
+    .moto {
+        position: absolute;
+        margin-top: 200px;
+        max-height: 50px;
+        max-width: 700px;
+        margin-left: 120px;
+    }
+    
+    .moto  h1{
+        font-family: monospace;
+        font-size: 45px;
+    }
+    
+    .intro {
+        position: absolute;
+        margin-top: 500px;
+        margin-left: 30px;
+        max-width: 500px;
+        max-height: max-content;
+    }
+    
+    .intro h3{
+        font-weight: 400;
+        color: #613fe5;
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .intro p{
+        padding: 3px;
+        font-size: 18px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+    .navigation {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 400px; 
+    }
+
+    .moto {
+        position: absolute;
+        margin-top: 200px;
+        max-height: 50px;
+        max-width: 700px;
+        margin-left: 80px;
+    }
+
+    .intro {
+        position: absolute;
+        margin-top: 450px;
+        margin-left: 30px;
+        max-width: 500px;
+        max-height: max-content;
+    }
+
+    .img1 img {
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 800px;
+        border-radius: 20px;
+        height: auto;
+        max-width: 50%;
+        opacity: 0.9;
+    }
+}

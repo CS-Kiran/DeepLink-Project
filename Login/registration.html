@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="./registration.css">
+    </head>
+    <body>
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+        <div id="circle4"></div>
+        <div class="container">
+            <form method="POST" action="./registration.php"  name="reg_form">
+                <div class="conForm">
+                <div class="title">
+                    <h1>Registration Form</h1>
+                </div>
+                
+                <div class="department">
+                    
+                    <label><h1>Department Details</h1></label>
+
+                    <div class="dept_name">
+                        <label for="department_name">Department Name<span>*</span></label>
+                        <select name="department_name" required>
+                        <option value="" disabled selected hidden>Select Department</option>
+                        <option value="Construction">Construction</option>
+                        <option value="Pipeline Distribution">Pipeline Distribution</option>                
+                        <option value="Electrical Power Work">Electrical Power Work</option>                
+                        <option value="Sanitation & Hygiene Management">Sanitation & Hygiene Management</option>                
+                        <option value="Environment Recreation">Environment/Park Recreation</option>                
+                        <option value="Infrastructure & Transportation">Infrastructure & Transportation</option>                
+                        </select>
+                    </div>
+
+                    <label for="department_type">Department Type<span>*</span></label>
+                    <input type="text" name="department_type" placeholder="Department Type or Ministry Name" required><br>
+
+                    <label for="department_description">Department Description<span>*</span></label><br>
+                    <textarea name="department_description" placeholder="Department Description" rows="6" cols="40" maxlength="160" wrap="soft" required></textarea><br>
+
+                    <label for="department_head">Department Head<span>*</span></label>
+                    <input type="text" name="department_head" placeholder="Department Head" required><br>
+
+                    <label for="department_email">Department Email<span>*</span></label>
+                    <input type="email" name="department_email" placeholder="Department Email" required><br>
+
+                    <label for="department_phone">Department Phone<span>*</span></label>
+                    <input type="tel" name="department_phone" placeholder="Department Contact Number" pattern="[0-9]{10}" required><br>
+
+                    <label for="department_address">Department Address<span>*</span></label><br>
+                    <textarea name="department_address" placeholder="Department Address" rows="6" cols="40" maxlength="160" wrap="soft" required></textarea><br>
+                </div>
+
+                <div class="personal">
+                    <br><br>
+                    <label><h1>Personal Details</h1></label>
+                    <label for="first_name">First Name<span>*</span></label>
+                    <input type="text" name="first_name" placeholder="First Name" required><br>
+
+                    <label for="last_name">Last Name<span>*</span></label>
+                    <input type="text" name="last_name" placeholder="Last Name" required><br>
+
+                    <label for="dob">Date of Birth<span>*</span></label>
+                    <input type="date" name="dob" placeholder="Date Of Birth" required><br>
+
+                    <label for="personal_address">Personal Address</label><br>
+                    <textarea name="personal_address" placeholder="Personal Address" rows="6" cols="40" maxlength="160" wrap="soft"></textarea><br>
+
+                    <label for="designation">Designation<span>*</span></label>
+                    <input type="text" name="designation" placeholder="Designation" required><br>
+
+                    <label for="department_uid">Departmental UID<span>*</span></label>
+                    <input type="text" name="department_uid" placeholder="Your Department UID Number" required><br> 
+                </div>
+
+                <div class="login_details">
+                    <br><br>
+                    <label><h1>Login Details</h1></label>
+                    <label for="username">Username<span>*</span></label>
+                    <input type="text" name="username" placeholder="Username"><br>
+
+                    <label for="email">Email Id<span>*</span></label>
+                    <input type="email" name="email" placeholder="Email Id"><br>
+
+                    <label for="password">Password<span>*</span></label>
+                    <input type="password" name="pass" placeholder="Password"><br>
+                </div>
+
+                <div class="btn">
+                    <br><br>
+                    <button value="REGISTER" name="register" id="reg">REGISTER</button><br>
+                    <button value="BACK" name="back" id="back" onclick="goto()">BACK</button><br>
+                </div>
+                <br><br><br><br>
+            </div>
+            </form>
+            <script>
+                function goto() {
+                    location.href = "./login.html";
+                }
+            </script>
+        </div>
+    </body>
+</html>

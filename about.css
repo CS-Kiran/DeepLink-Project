@@ -1,0 +1,315 @@
+body {
+    background: #120e16;
+    color: #f6f6f7;
+    font-size: 16px;
+}
+
+.container {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 15px;
+}
+
+.logo img {
+    position: absolute;
+    max-height: 65px;
+    width: auto;
+    transform-origin: top-left;
+    transform: rotate(45deg);
+}
+
+.logo h3 {
+    font-weight: 150;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 5px;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.navigation {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 800px;  
+}
+
+.navigation nav a {
+    margin-left: 250px;
+    text-align: center;
+    text-decoration: none;
+    color: #f6f6f7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+.navigation nav a::after {
+    content: '';
+    width: auto;
+    max-height: 1px;
+    transition: border-bottom 0.5s ease-in;
+}
+
+.navigation nav a:hover {
+    border-bottom: 2px solid #613fe6;
+}
+
+.moto {
+    position: absolute;
+    margin-top: 100px;
+    max-height: 50px;
+    max-width: 700px;
+    margin-left: 200px;
+}
+
+.moto  h1{
+    color: #613fe6;
+    font-family: monospace;
+    font-size: 65px;
+}
+
+.intro1 {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 60px;
+    max-width: 600px;
+}
+
+.intro1 p{
+    padding: 5px;
+    padding-bottom: 100px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.intro2 {
+    font-family: monospace;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 900px;
+    max-width: 600px;
+}
+
+.intro2 h1{
+    color: #613fe6;
+    font-size: 65px;
+}
+
+.intro2 h3 {
+    font-size: 22px;    
+}
+
+.intro2 p{
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.intro3 {
+    font-family: monospace;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 60px;
+    max-width: 600px;
+    max-height: fit-content;
+}
+
+.intro3 h1{
+    margin-left: 100px;
+    color: #613fe6;
+    font-size: 65px;
+}
+.intro3 p{
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.intro3 b{
+    font-size: larger;
+    color: #613fe6;
+    border-bottom: 1px solid ;
+}
+
+
+/* --------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 1024px) and (max-width : 1920px)  {
+    .container {
+        font-family: 'Open Sans', sans-serif;
+        position: relative;
+    }
+    
+    .logo {
+        position: absolute;
+        margin-left: 15px;
+    }
+    
+    .logo img {
+        position: absolute;
+        max-height: 65px;
+        width: auto;
+        transform-origin: top-left;
+        transform: rotate(45deg);
+    }
+    
+    .logo h3 {
+        font-weight: 150;
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 5px;
+        font-family: monospace;
+        font-size: 25px;
+    }
+    
+    .navigation {
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 600px;  
+    }
+    
+    .navigation nav a {
+        margin-left: 250px;
+        text-align: center;
+        text-decoration: none;
+        color: #f6f6f7;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+    }
+    
+    .navigation nav a::after {
+        content: '';
+        width: auto;
+        max-height: 1px;
+        transition: border-bottom 0.5s ease-in;
+    }
+    
+    .navigation nav a:hover {
+        border-bottom: 2px solid #613fe6;
+    }
+    
+    .moto {
+        position: absolute;
+        margin-top: 100px;
+        max-height: 50px;
+        max-width: 700px;
+        margin-left: 200px;
+    }
+    
+    .moto  h1{
+        color: #613fe6;
+        font-family: monospace;
+        font-size: 65px;
+    }
+    
+    .intro1 {
+        position: absolute;
+        margin-top: 230px;
+        margin-left: 60px;
+        max-width: 600px;
+    }
+    
+    .intro1 p{
+        padding: 5px;
+        padding-bottom: 100px;
+        font-size: 18px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .intro2 {
+        font-family: monospace;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 900px;
+        max-width: 600px;
+    }
+    
+    .intro2 h1{
+        color: #613fe6;
+        font-size: 65px;
+    }
+    
+    .intro2 h3 {
+        font-size: 22px;    
+    }
+    
+    .intro2 p{
+        padding: 5px;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .intro3 {
+        font-family: monospace;
+        position: absolute;
+        margin-top: 450px;
+        margin-left: 60px;
+        max-width: 600px;
+        max-height: fit-content;
+    }
+    
+    .intro3 h1{
+        margin-left: 100px;
+        color: #613fe6;
+        font-size: 65px;
+    }
+    .intro3 p{
+        padding: 5px;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .intro3 b{
+        font-size: larger;
+        color: #613fe6;
+        border-bottom: 1px solid ;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+    .moto {
+        position: absolute;
+        margin-top: 80px;
+        max-height: 50px;
+        max-width: 700px;
+        margin-left: 100px;
+    }
+    
+    .intro1 {
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 30px;
+        max-width: 500px;
+    }
+    
+    .intro2 {
+        font-family: monospace;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 600px;
+        width: 500px;
+    }
+
+    .intro3 {
+        font-family: monospace;
+        position: absolute;
+        margin-top: 390px;
+        margin-left: 30px;
+        max-width: 500px;
+        max-height: fit-content;
+    }
+
+    .intro3 h1{
+        margin-left: 30px;
+        color: #613fe6;
+        font-size: 55px;
+        margin-bottom: 0px;
+    }
+    
+    .navigation {
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 300px;  
+    }
+}

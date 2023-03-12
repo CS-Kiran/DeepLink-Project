@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Project Registration</title>
+        <link rel="stylesheet" href="./proj_details.css">
+    </head>
+    <body>
+        <button name="back" id="back" onclick="back()">BACK</button>
+        <div class="container">
+            <h1>Project Posting Form</h1>
+            <form method="post" action="./proj_details.php" name="proj_form">
+                <div class="information">
+                    <label for="proj_name">Project Name<span>*</span></label>
+                    <input type="text" id="name" name="pname" placeholder="Enter Project Name" required><br>
+                    <br><br>
+                    <div class="dept_name">
+                        <label>Department Name<span class="required-color">*</span></label>
+                        <select name="deptname" required>
+                        <option value="" disabled selected hidden>Select Department</option>
+                        <option value="Construction">Construction</option>
+                        <option value="Pipeline Distribution">Pipeline Distribution</option>                
+                        <option value="Electrical Power Work">Electrical Power Work</option>                
+                        <option value="Sanitation & Hygiene Management">Sanitation & Hygiene Management</option>                
+                        <option value="Environment Recreation">Environment/Park Recreation</option>                
+                        <option value="Infrastructure & Transportation">Infrastructure & Transportation</option>                
+                        </select>
+                    </div>
+                    <br><br>
+
+                    <label for="proj_description">Project Description</label><br>
+                    <textarea name="pdescription" placeholder="Enter Project Description" rows="6" cols="40" maxlength="160" wrap="soft" required></textarea><br>
+
+                    <label for="proj_budget">Project Budget<span>*</span></label>
+                    <input type="text" id="money" name="pmoney" placeholder="Estimated Budget in Lakhs" required><br>
+
+                    <label for="proj_date">Project Commencement<span>*</span></label>
+                    <input type="date" id="start_date" name="psdate" placeholder="Enter Project Start Date" required><br>
+
+                    <label for="proj_date">Project Termination<span>*</span></label>
+                    <input type="date" id="end_date" name="pedate" placeholder="Enter Project End Date" required><br>
+
+                    <label for="proj_status">Project Status<span>*</span></label>
+                    <input type="text" id="status" name="pstatus" onclick="proj_status()" placeholder="Status" readonly><br>
+
+                    <label for="proj_location">Project Location</label><br>
+                    <textarea name="plocation" placeholder="Enter Project Location" rows="6" cols="40" maxlength="160" wrap="soft" required></textarea><br>
+
+                    <div class="coordinates">
+                        <label for="longitude">Longitude<span>*</span></label>
+                        <input type="text" id="longitude" name="plongitude" placeholder="Enter Longitude" required>
+                    
+                        <label for="latitude">Latitude<span>*</span></label>
+                        <input type="text" id="latitude" name="platitude" placeholder="Enter Latitude" required>
+                    </div>
+                    <br>
+                    <div class="btn">
+                        <button name="send" id="send">SUBMIT</button>
+                        <button name="clear" id="clear" onclick="resetForm()">CLEAR</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <script>
+
+            function proj_status() {
+                var startdate = new Date(document.getElementById('start_date').value);
+                var enddate = new Date(document.getElementById('end_date').value);
+                var curdate = new Date();
+
+                if(startdate!=null && enddate!=null) {
+                    if(curdate >= startdate && curdate <= enddate) {
+                        document.getElementById('status').value = 'Ongoing';
+                    }
+                    else if(curdate > enddate) {
+                        document.getElementById('status').value = 'Completed';
+                    }
+                    else if (curdate < startdate){
+                        document.getElementById('status').value ='Upcoming';
+                    }
+                    else {
+                        document.getElementById('status').value = '';
+                    }
+                }
+            }
+
+            function resetForm() {
+                document.getElementsByName("proj_form").reset();
+            }
+
+            function back() {
+                window.location.href= "../Dashboard/dashboard.php";
+            }
+
+        </script>
+    </body>
+</html>
