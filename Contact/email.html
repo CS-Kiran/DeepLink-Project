@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="email.css">
+</head>
+<body>
+    <div class="logo">
+        <h3>Deep Link</h3>
+        <img src="../Assets/link.png">
+    </div>
+
+    <div class="navigation">
+        <nav>
+          <a href="../home.html">Go Back</a>
+          <button><a href="../Login/login.html" id="login">Log In</a></button>
+        </nav>
+    </div>
+
+    <div class="desc">
+        <h2>" We'd love to hear from you!
+            If you have any questions
+            or feedback about our website,
+            please don't hesitate to get in
+            touch."
+        </h2>
+        <p>
+            <h3>Email : 
+            <br><span id="l1">You can email us at <u>contact@governmentprojects.com</u></span>
+            <br><span id="l2">We aim to respond to all emails within 24 hours.</span></h3>
+            
+            <h3>Phone : <br><span id="l3">+91 9871236540</span></h3>
+
+            <h3>Mailing Address :
+            <br>
+            <span id="l4">Government Projects</span><br>
+            <span id="l5">123 MK Road</span><br>
+            <span id="l6">Pune,Maharashtra</span><br>
+            <span id="l7">India 411001</span></h3>
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="information">
+            <h1>FeedBack</h1>
+        <form method="post" name="Form" action="mail.php" id="emailform">
+            <label for="name">From : </label>
+            <input type="email" name="sender" placeholder="Enter Senders Email" required>
+            <br>
+        
+            <label for="name">Password : </label>
+            <input type="password" name="password" placeholder="Enter Senders Email Password" required>
+            <br>
+        
+            <label for="email">To : </label>
+            <input type="email" name="receiver" placeholder="Enter Receivers Email" required>
+            <br>
+        
+            <label for="subject">Subject : </label>
+            <input type="text" name="subject" placeholder="Enter Your Email Subject" required>
+            <br><br><br>
+            <label for="message">Message : </label>
+            <br>
+            <textarea name="message" id="message" rows="5" cols="50" required></textarea>
+            <br><br>
+        
+            <div class="btn">
+                <button name="send" id="send">SEND</button>
+                <button name="clear" id="clear" onclick="resetForm()">CLEAR</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <script>
+        function resetForm() {
+            document.getElementById("emailform").reset();
+        }
+    </script>
+</body>
+</html>

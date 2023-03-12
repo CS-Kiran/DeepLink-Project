@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>Collaboration Request</title>
+    <link href="./collab_form.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="logo">
+      <h3>Deep Link</h3>
+      <img src="../Assets/link.png" />
+    </div>
+    <div class="navigation">
+      <nav>
+        <a href="./all_projects.php "><button>All Project</button></a>
+        <a href="../Dashboard/dashboard.php"><button>Back</button></a>
+      </nav>
+    </div>
+
+    <h1 class="heading">Send Collaboration Request</h1>
+    <br /><br />
+
+    <form method="post" action="collab_form.php" class="form1">
+      <div class="info">
+        <div class="dept_name">
+          <label for="department_name" id="labinfo"
+            >Department Name<span>*</span></label
+          >
+          <select name="department_name" class="option" required>
+            <option value="" disabled selected hidden>Select Department</option>
+            <option value="Construction">Construction</option>
+            <option value="Pipeline Distribution">Pipeline Distribution</option>
+            <option value="Electrical Power Work">Electrical Power Work</option>
+            <option value="Sanitation & Hygiene Management">
+              Sanitation & Hygiene Management
+            </option>
+            <option value="Environment Recreation">
+              Environment/Park Recreation
+            </option>
+            <option value="Infrastructure & Transportation">
+              Infrastructure & Transportation
+            </option>
+          </select>
+        </div>
+
+        <label for="pid" id="labinfo">Project Id<span>*</span></label>
+        <input
+          type="text"
+          name="pid"
+          id="labinput"
+          required
+          placeholder="Project_Id" /><br />
+
+        <label for="subject" id="labinfo">Subject<span>*</span></label>
+        <input
+          type="text"
+          name="subject"
+          id="labinput"
+          required
+          placeholder="Subject" /><br />
+
+        <label for="budget" id="labinfo">Budget<span>*</span></label>
+        <input
+          type="text"
+          name="budget"
+          id="labinput"
+          required
+          placeholder="Enter project budget (in Lakh)" /><br />
+
+        <label for="duration" id="labinfo"
+          >Estimated End Date<span>*</span></label
+        >
+        <input
+          type="date"
+          name="duration"
+          id="labinput"
+          required
+          placeholder="Enter Project duration" /><br />
+
+        <label for="content" id="labinfo">Reason<span>*</span></label
+        ><br />
+        <textarea
+          placeholder="Reason for Collaboration"
+          name="content"
+          rows="6"
+          cols="40"
+          maxlength="160"
+          wrap="soft"></textarea>
+      </div>
+      <div class="button">
+        <button type="submit" name="submit">Send</button>
+      </div>
+    </form>
+  </body>
+</html>

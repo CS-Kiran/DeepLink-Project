@@ -1,0 +1,122 @@
+body {
+    color: #120e16;
+    background: #f6f6f7;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.logo {
+    position: absolute;
+    margin-left: 15px;
+}
+
+.logo img {
+    position: absolute;
+    max-height: 65px;
+    max-width: auto;
+    transform-origin: top-left;
+    transform: rotate(45deg);
+}
+
+.logo h3 {
+    font-weight: 150;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 5px;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.navigation {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 500px;
+}
+
+.navigation nav a {
+    margin-left: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #120e16;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.navigation nav a::after {
+    content: '';
+    width: auto;
+    max-height: 1px;
+    transition: border-bottom 0.5s ease-in;
+}
+
+.navigation nav a:hover {
+    border-bottom: 2px solid #613fe6;
+}
+
+.navigation button {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 55px;
+    border-radius: 8px;
+    background: #422aa3;
+    border: 0px;
+    cursor: pointer;
+    color: #f6f6f7;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+
+#logout:hover {
+    border: 0px solid;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0 #613fe5, 0 5px 5px 0 #613fe5;
+}
+
+h1 {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 60px;
+    font-size: 55px;
+    color: #613fe6;
+
+}
+
+#intro {
+    letter-spacing: 5px;
+    color: #120e16;
+    font-size: 35px;
+    margin-left: 200px;
+    font-weight: 400;
+}
+
+#intro2 {
+    position: absolute;
+    color: #120e16;
+    font-size: 45px;
+    margin-left: 200px;
+    font-weight: 600;
+    margin-top: 100px;
+ 
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    margin-left: 0px;
+    width: 100%;
+    height: 60px;
+    color: #f6f6f7;
+    background: #120e16;
+    padding-top: 10px;
+}
+.tab{
+    margin-bottom: 15px;
+}
+
+.space {
+    position: relative;
+    margin-top: 10px;
+    padding-bottom: 50px;
+}

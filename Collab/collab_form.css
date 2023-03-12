@@ -1,0 +1,115 @@
+body {
+    background: #f6f6f7;
+    color: #120e16;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 15px;
+}
+
+.logo img {
+    position: absolute;
+    max-height: 65px;
+    max-width: auto;
+    transform-origin: top-left;
+    transform: rotate(45deg);
+}
+
+.logo h3 {
+    font-weight: 150;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 5px;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.navigation {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 65%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    border: 1px solid #613fe5;
+    color: #f6f6f7;
+    background: #613fe5;
+    border-radius: 5px;
+    font-size: large;
+    margin-left: 30px;
+}
+
+button:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px 0 #613fe5, 0 5px 5px 0 #613fe5;
+}
+
+.button {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    align-self: center;
+    margin-left: 40%;
+}
+
+h1{
+    margin-top: 50px;
+    font-size: 50px;
+    color: #120e16;
+    text-align: center;
+}
+
+.form1 {
+    margin-left: 25%; 
+    max-width:50%;
+    padding: 2%;
+    background: transparent;
+    border-radius: 10px;
+    height: max-content;
+    box-shadow: 0 0 20px 0 #2f2f30, 0 5px 5px 0 #545255;
+}
+
+.form1 input, textarea,.option{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #8b8b8b;
+    min-width: 450px;
+    margin-left: 40%;
+}
+
+textarea {
+    width: 47%;
+}
+
+span {
+    color: red;
+}
+
+input::placeholder , textarea::placeholder{
+    font-size: large;
+}
+
+label {
+    
+    position: relative;
+    padding-top: 10px;
+    font-size: 20px;
+    padding-right: 30px;
+    
+}
+
+select {
+    font-size: larger;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#labinfo{
+    margin-left: 1%;
+}

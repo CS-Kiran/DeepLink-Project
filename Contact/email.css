@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: "Poppins",sans-serif;
+}
+
+body
+{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #120e16; 
+}
+
+.logo img {
+    position: relative;
+    max-height: 65px;
+    max-width: auto;
+    transform-origin: top-left;
+    transform: rotate(45deg);
+    margin-left: 15px;
+}
+
+.logo h3 {
+    max-width: 15px;
+    color: #f6f6f7;
+    font-weight: 150;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 15px;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.navigation {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 200px;
+}
+
+.navigation nav a {
+    margin-left: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #f6f6f7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.navigation nav a::after {
+    content: '';
+    width: auto;
+    max-height: 1px;
+    transition: border-bottom 0.5s ease-in;
+}
+
+.navigation nav a:hover {
+    border-bottom: 2px solid #613fe6;
+}
+
+.navigation button {
+    margin-left: 450px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #422aa3;
+    border: 0px;
+}
+
+.navigation button a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    margin-right: 16px;
+    color: #f6f6f7;
+}
+
+#login:hover {
+    border: 0px solid;
+}
+
+.desc {
+    position: absolute;
+    color: #f6f6f7;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 100px;
+}
+
+.desc h2 {
+    color: rgb(155, 127, 255);
+    max-width: 600px;
+    margin-top: 10px;
+    margin-left: 120px;
+    font-size: 35px;
+    margin-bottom: 90px;
+}
+
+.desc h3{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+#l1 , #l2, #l3{
+    font-weight: 100;
+    font-size: large;
+    margin-left: 100px;
+}
+
+#l4 , #l5 , #l6 , #l7 {
+    font-weight: 100;
+    font-size: large;
+    margin-left: 250px;
+}
+
+.desc u{
+    font-size: 22px;
+    color: #613fe5;
+}
+
+.container {
+    margin-left: 1000px;
+    position: relative;
+    left: -40px;
+    display: flex;
+    justify-content: center;
+    max-width: 550px;
+    height: 42rem;
+    box-shadow: 0 0 40px 20px #1a1320;
+    perspective: 1000px;
+
+}
+
+.container label {
+    max-width: 100%;
+    background: transparent;
+    margin: 6px 0;
+    max-height: 32px;
+    padding: 0 10px;
+    outline: none;
+    text-align: center;
+    color: #f6f6f7;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container input{
+    background: #120e16;
+    color: #f6f6f7;
+    border: 1px solid #b5b5b5;
+    margin: 35px 0 10px;
+    height: 35px;
+    width: 300px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+.container textarea {
+    background: #120e16;
+    color: #f6f6f7;
+    border: 1px solid #f6f6f7;
+    border-radius: 20px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    margin: 35px 0 10px;
+}
+
+::placeholder {
+    color: #b5b5b5;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+#send{
+    background: #613fe5;
+    border: 1px solid #120e16;
+    max-height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    outline: none;
+    color: #f6f6f7;
+    cursor: pointer;
+    margin-left: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+#clear {
+    background: transparent;
+    border: 1px solid #f6f6f7;
+    max-height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    outline: none;
+    color: #f6f6f7;
+    cursor: pointer;
+    margin-left: 190px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.information h1{
+    color: #613fe5;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 1440px) and (max-width : 1920px)  {
+    .logo img {
+        position: relative;
+        max-height: 65px;
+        max-width: auto;
+        transform-origin: top-left;
+        transform: rotate(45deg);
+        margin-left: 15px;
+    }
+    
+    .logo h3 {
+        max-width: 15px;
+        color: #f6f6f7;
+        font-weight: 150;
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 15px;
+        font-family: monospace;
+        font-size: 25px;
+    }
+    
+    .navigation {
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 200px;
+    }
+    
+    .navigation nav a {
+        margin-left: 25px;
+        text-align: center;
+        text-decoration: none;
+        color: #f6f6f7;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+    }
+    
+    .navigation nav a::after {
+        content: '';
+        width: auto;
+        max-height: 1px;
+        transition: border-bottom 0.5s ease-in;
+    }
+    
+    .navigation nav a:hover {
+        border-bottom: 2px solid #613fe6;
+    }
+    
+    .navigation button {
+        margin-left: 350px;
+        padding: 10px;
+        border-radius: 8px;
+        background: #422aa3;
+        border: 0px;
+    }
+    
+    .navigation button a{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 17px;
+        margin-right: 16px;
+        color: #f6f6f7;
+    }
+    
+    #login:hover {
+        border: 0px solid;
+    }
+    
+    .desc {
+        position: absolute;
+        color: #f6f6f7;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 100px;
+    }
+    
+    .desc h2 {
+        color: rgb(155, 127, 255);
+        max-width: 600px;
+        margin-top: 10px;
+        margin-left: 120px;
+        font-size: 35px;
+        margin-bottom: 90px;
+    }
+    
+    .desc h3{
+        font-size: 20px;
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+    
+    #l1 , #l2, #l3{
+        font-weight: 100;
+        font-size: large;
+        margin-left: 100px;
+    }
+    
+    #l4 , #l5 , #l6 , #l7 {
+        font-weight: 100;
+        font-size: large;
+        margin-left: 250px;
+    }
+    
+    .desc u{
+        font-size: 22px;
+        color: #613fe5;
+    }
+    
+    .container {
+        margin-left: 900px;
+        position: relative;
+        left: -40px;
+        display: flex;
+        justify-content: center;
+        width: 550px;
+        height: 42rem;
+        box-shadow: 0 0 40px 20px #1a1320;
+        perspective: 1000px;
+    
+    }
+    
+    .container label {
+        max-width: 100%;
+        background: transparent;
+        margin: 6px 0;
+        max-height: 32px;
+        padding: 0 10px;
+        outline: none;
+        text-align: center;
+        color: #f6f6f7;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .container input{
+        background: #120e16;
+        color: #f6f6f7;
+        border: 1px solid #b5b5b5;
+        margin: 35px 0 10px;
+        height: 35px;
+        width: 300px;
+        font-size: 12px;
+        border-radius: 20px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: medium;
+    }
+    
+    .container textarea {
+        background: #120e16;
+        color: #f6f6f7;
+        border: 1px solid #f6f6f7;
+        border-radius: 20px;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        margin: 35px 0 10px;
+    }
+    
+    ::placeholder {
+        color: #b5b5b5;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: small;
+    }
+    
+    #send{
+        background: #613fe5;
+        border: 1px solid #120e16;
+        max-height: 32px;
+        font-size: 12px;
+        border-radius: 20px;
+        padding: 5px 15px;
+        box-sizing: border-box;
+        outline: none;
+        color: #f6f6f7;
+        cursor: pointer;
+        margin-left: 50px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+    }
+    
+    #clear {
+        background: transparent;
+        border: 1px solid #f6f6f7;
+        max-height: 32px;
+        font-size: 12px;
+        border-radius: 20px;
+        padding: 5px 15px;
+        box-sizing: border-box;
+        outline: none;
+        color: #f6f6f7;
+        cursor: pointer;
+        margin-left: 190px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+    }
+    
+    .information h1{
+        color: #613fe5;
+        text-align: center;
+        font-size: 40px;
+        padding-top: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 700;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+    .navigation {
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 100px;
+    }
+    .navigation button {
+        margin-left: 80px;
+        padding: 10px;
+        border-radius: 8px;
+        background: #422aa3;
+        border: 0px;
+    }
+
+    .container {
+        margin-left: 500px;
+        position: relative;
+        justify-content: center;
+        width: 550px;
+        height: auto;
+        box-shadow: 0 0 40px 20px #1a1320;
+        perspective: 1000px;
+    
+    }
+
+    .desc h3{
+        font-size: 15px;
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+    
+    #l1 , #l2, #l3{
+        font-weight: 100;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    
+    #l4 , #l5 , #l6 , #l7 {
+        font-weight: 100;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    
+    .desc u{
+        font-size: 15px;
+        color: #613fe5;
+    }
+    
+
+.desc h2 {
+    color: rgb(155, 127, 255);
+    max-width: 300px;
+    margin-top: 10px;
+    margin-left: 80px;
+    font-size: 20px;
+    margin-bottom: 90px;
+}
+}
